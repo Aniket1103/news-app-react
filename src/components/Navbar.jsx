@@ -17,13 +17,13 @@ function Navbar() {
         </a>
         <ul className="nav-options">
           <li>
-            <a href="#">Featured News</a>
+            <a href="#featured">Featured News</a>
           </li>
           <li>
-            <a href="#">Web Stories</a>
+            <a href="#web-stories">Web Stories</a>
           </li>
           <li>
-            <a href="#">Manoranjan</a>
+            <a href="#manoranjan">Manoranjan</a>
           </li>
         </ul>
       </nav>

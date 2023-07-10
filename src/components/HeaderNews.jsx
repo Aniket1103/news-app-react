@@ -1,7 +1,16 @@
-function HeaderNews() {
+function HeaderNews({firstStory}) {
+    console.log("firstStory", firstStory)
     return (
         <>
-            Content
+            <header >
+                <a href={firstStory.link}>
+                    <h2 className="head-news-title">
+                        <span className="news-category">{firstStory.category || "alt"} :</span>
+                        {firstStory.title}
+                    </h2>
+                    <img src={firstStory["featured-image"]} alt="alt" className="header-img" />
+                </a>
+            </header>
         </>
     )
 }
