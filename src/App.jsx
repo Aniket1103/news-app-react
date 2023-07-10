@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
-import HeaderNews from './components/HeaderNews'
 import FeaturedHome from './widgets/FeaturedHome';
+import Manoranjan from './widgets/Manoranjan';
+import WebStories from './widgets/WebStories';
 
 function App() {
   const newsEnpoint = "http://api.lokmat.com/assignmentassociate3";
@@ -27,7 +28,11 @@ function App() {
       <Navbar />
       {
         news.length > 0 && 
-        <FeaturedHome FeaturedStories={news[0]}/>
+          <>
+            <FeaturedHome FeaturedStories={news[0]}/>
+            <WebStories WebStories={news[1]}/>
+            <Manoranjan manoranjanStories={news[2]}/>
+          </>
       }
     </>
   )

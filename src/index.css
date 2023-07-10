@@ -4,14 +4,19 @@
   box-sizing: border-box;
 }
 
-/* #root {
+#root {
+  max-width: 1068px;
   margin: 0 auto;
-} */
+  /* text-align: center; */
+}
+
+#web-stories {
+  height: 50rem;
+  background-color: aqua;
+}
 
 body {
   font-family: "Noto Sans", sans-serif;
-  /* max-width: 968px;
-  text-align: center; */
 }
 
 header {
