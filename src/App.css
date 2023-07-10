@@ -86,7 +86,7 @@ h1 {
   width: 40%;
 }
 
-/* News Continer */
+/* News Container */
 .news-container {
   padding: 0rem .6rem;
 }
@@ -108,9 +108,18 @@ h1 {
   grid-auto-flow: column;
   gap: .5rem;
   margin: .5rem;
-  height: 22rem;
   overflow-x: auto;
   /* grid-auto-columns: 70%; */
+}
+
+
+#web-stories > .news-scroller {
+  height: 31rem;
+}
+
+#featured > .news-scroller, 
+#manoranjan > .news-scroller {
+  height: 21rem;
 }
 
 /* Horizontal News Card */
@@ -166,9 +175,15 @@ h1 {
 @media (min-width: 968px) {
   .news-scroller {
     height: 23rem;
-    
   }
-  .horizontal-news-card > a > .news-card-image {
+
+  #featured > .news-scroller, 
+  #manoranjan > .news-scroller {
+    height: 23rem;
+  }
+
+  #featured .horizontal-news-card > a > .news-card-image,
+  #manoranjan .horizontal-news-card > a > .news-card-image {
     border-radius: 3%;
     width: 100%;
   }

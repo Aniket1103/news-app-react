@@ -6,7 +6,7 @@ function FeaturedHome ({FeaturedStories}) {
 
   return (
     <>
-      <section id="#featured">
+      <section id="featured">
         <HeaderNews firstStory={FeaturedStories.data[0]}/>
         <NewsContainer stories={FeaturedStories.data.slice(1, 4)} />
         <NewsScroller stories={FeaturedStories.data.slice(4, 7)} />

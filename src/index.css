@@ -10,9 +10,9 @@
   /* text-align: center; */
 }
 
-#web-stories {
-  height: 50rem;
-  background-color: aqua;
+h3 {
+  padding: 0.5rem 1rem 0rem 1rem;
+  font-size: large;
 }
 
 body {

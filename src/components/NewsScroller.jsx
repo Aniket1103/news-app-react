@@ -6,7 +6,7 @@ function NewsContainer({ stories }) {
     <>
       <section className="news-scroller">
         {
-          stories.map((story, index) => {
+          stories.map((story) => {
             return (
               <>
                 <HorizontalCard story={story} />
