@@ -6,7 +6,8 @@ import Manoranjan from './widgets/Manoranjan';
 import WebStories from './widgets/WebStories';
 
 function App() {
-  const newsEnpoint = "http://api.lokmat.com/assignmentassociate3";
+  console.log(import.meta.env.PROD)
+  const newsEnpoint = (import.meta.env.PROD) ? "/api/assignmentassociate3" : "http://api.lokmat.com/assignmentassociate3";
   const [news, setNews] = useState([]);
 
   useEffect(() => {
